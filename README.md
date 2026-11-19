@@ -123,6 +123,10 @@ Chat history is persisted in the database for each conversation, allowing users 
 
    Create a `.env.local` file with the following variables:
 
+   docker stop postgresql-container
+
+   docker rm postgresql-container
+
    **Required:**
    ```env
    # Better Auth Configuration

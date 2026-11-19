@@ -4,7 +4,6 @@ import { useState } from "react"
 import { authClient } from "@/lib/auth-client"
 import { useRouter, useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { ChevronLeft } from "lucide-react"
 import Link from "next/link"
 
 const GoogleIcon = () => (
@@ -53,18 +52,7 @@ export default function SignUpPage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col justify-between p-8 h-full">
-          {/* Back Button */}
-          <Link href="/">
-            <Button 
-              variant="outline" 
-              className="bg-card/50 border-border/50 text-foreground hover:bg-card/80 hover:border-border backdrop-blur-sm w-fit"
-            >
-              <ChevronLeft className="w-4 h-4 mr-2" />
-              Back
-            </Button>
-          </Link>
-
+        <div className="relative z-10 flex flex-col justify-end p-8 h-full">
           {/* Bottom Text */}
           <div className="text-foreground space-y-4">
             <h2 className="text-3xl font-light tracking-tight">Ship Faster, Work Smarter</h2>

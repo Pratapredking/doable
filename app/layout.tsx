@@ -7,7 +7,10 @@ import { ErrorBoundaryWrapper } from "@/components/error-boundary-wrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "https://doable-lyart.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Doable",
   description: "Built for teams who want to get things done. Clean, fast, and powerful task management. Free forever, open source.",
   keywords: ["task management", "team collaboration", "project management", "kanban", "agile", "productivity", "open source"],
